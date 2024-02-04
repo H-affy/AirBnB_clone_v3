@@ -79,7 +79,7 @@ class DBStorage:
         """ method to retrieve one object """
         if cls in classes.value() and id and type(id) == str:
             d_obj = self.all(cls)
-            for key, valuenin d_obj.items():
+            for key, value in d_obj.items():
                 if key.split(".") [1] == id:
                     return value
         return None
